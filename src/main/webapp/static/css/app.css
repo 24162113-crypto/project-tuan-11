@@ -1,0 +1,113 @@
+/* =========================================================
+   VideoShare - tinh chỉnh nhỏ trên nền Metronic 3.6
+   (nạp SAU các CSS của template nên ghi đè được)
+   ========================================================= */
+
+/* ---------- Dùng chung ---------- */
+.student-info span + span { margin-left: 24px; }
+.pagination > .disabled > a,
+.pagination > .disabled > span { pointer-events: none; }
+.thumb { width: 90px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 3px; background: #e2e8f0; }
+.thumb.large { width: 200px; display: block; margin-bottom: 8px; }
+.alert { margin-bottom: 15px; }
+
+/* Trang đang chọn của phân trang lấy màu chủ đạo */
+.ecommerce .pagination > .active > a,
+.ecommerce .pagination > .active > a:hover { background: #64aed9; border-color: #64aed9; color: #fff; }
+
+/* =========================================================
+   TRANG NGƯỜI DÙNG (Metronic Frontend)
+   ========================================================= */
+
+/* Logo dạng chữ */
+.ecommerce .site-logo {
+  font-size: 26px; font-weight: 700; color: #3e4d5c;
+  padding-top: 22px; padding-bottom: 20px; letter-spacing: -0.3px;
+}
+.ecommerce .site-logo:hover { color: #3e4d5c; text-decoration: none; }
+.ecommerce .site-logo i { color: #64aed9; font-size: 30px; margin-right: 8px; vertical-align: -2px; }
+.pre-header .hello i { margin-right: 4px; }
+
+/* Banner tiêu đề: gọn hơn, dùng màu gradient thay ảnh */
+.ecommerce .title-wrapper {
+  background: #64aed9 linear-gradient(120deg, #3f5a73 0%, #64aed9 100%);
+  min-height: 0; padding: 38px 0 30px;
+}
+.ecommerce .title-wrapper h1 { font-size: 30px; padding: 0 9px 10px; margin: 0 -9px 12px; }
+.title-wrapper em { font-size: 16px; text-align: left; }
+.title-wrapper em:empty { display: none; }
+
+/* Khối danh mục */
+.category-block { margin-bottom: 30px; }
+.ecommerce .category-title {
+  text-transform: none; font-size: 22px; font-weight: 600; color: #3e4d5c;
+  border-left: 4px solid #64aed9; padding-left: 12px; margin: 10px 0 18px;
+}
+
+/* Thẻ video */
+.video-item { margin-bottom: 22px; box-shadow: 0 1px 3px rgba(0, 0, 0, .08); }
+.video-item .pi-img-wrapper img {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #e2e8f0; display: block;
+}
+.ecommerce .video-item h3.video-title {
+  font: 600 15px/1.4 'Open Sans', sans-serif; text-transform: none; color: #3e4d5c;
+  padding: 12px 0 6px; margin: 0;
+}
+.video-item h3.video-title a { color: #3498db; }
+.video-item h3.video-title a:hover { color: #217dbb; }
+.video-meta { margin: 0; padding: 0; color: #5f6d7b; font-size: 13.5px; line-height: 1.7; }
+.video-meta li { padding: 1px 0; }
+
+/* Trang chi tiết */
+.video-detail h1 { text-transform: none; font-size: 24px; font-weight: 600; }
+.video-detail .video-meta { font-size: 14.5px; line-height: 2; margin: 6px 0 18px; }
+.video-detail .video-meta li { border-bottom: 1px dotted #e3e6ea; }
+.video-detail .product-page-cart { margin-top: 10px; }
+.video-detail .product-page-content { padding-top: 30px; }
+.video-detail .product-main-image { margin-bottom: 0; }
+
+/* =========================================================
+   TRANG QUẢN TRỊ (Metronic Admin)
+   ========================================================= */
+.page-header.navbar .page-logo { padding-top: 0; }
+.page-header.navbar .page-logo > a.admin-logo {
+  float: none; display: block; height: 46px; line-height: 46px;
+  color: #fff; font-size: 20px; font-weight: 700; text-decoration: none; white-space: nowrap;
+}
+.admin-logo i { color: #1caf9a; font-size: 22px; margin-right: 8px; vertical-align: -2px; }
+.admin-logo small { font-size: 12px; font-weight: 400; color: #9aa7b8; margin-left: 2px; }
+
+.avatar-circle {
+  display: inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center;
+  background: rgba(255, 255, 255, .12); margin-right: 6px; vertical-align: middle;
+}
+.avatar-circle i { color: #fff; }
+
+.video-table > tbody > tr > td { vertical-align: middle; }
+.row-actions { white-space: nowrap; }
+.row-actions form { display: inline-block; margin: 0; }
+.portlet .form-alert { margin: 0; border-width: 0 0 1px; }
+.portlet-body .pagination { margin: 15px 0 5px; }
+.page-footer .student-info { color: #b3bcc9; }
+
+/* =========================================================
+   GIỎ HÀNG / THANH TOÁN
+   ========================================================= */
+.pi-price { font-size: 18px; font-weight: 700; color: #e84d1c; padding: 8px 0 6px; }
+.detail-price { font-size: 24px; margin-bottom: 8px; }
+.add-cart-form { margin: 0 0 10px; }
+.add-cart-form .qty-input { display: inline-block; width: 80px; margin-right: 8px; vertical-align: middle; }
+.cart-table > tbody > tr > td,
+.cart-table > thead > tr > th { vertical-align: middle; }
+.cart-table .thumb { display: inline-block; margin-right: 10px; vertical-align: middle; }
+.cart-table .cart-title { font-weight: 600; vertical-align: middle; }
+.cart-table .cart-total { font-size: 18px; font-weight: 700; color: #e84d1c; }
+.cart-qty-form { margin: 0; white-space: nowrap; }
+.cart-qty-form input[type=number] { display: inline-block; width: 70px; margin-right: 6px; }
+.cart-table form { margin: 0; }
+.cart-actions { margin-top: 15px; }
+.cart-actions .inline-form { display: inline-block; margin: 0 0 0 6px; }
+.cart-empty { text-align: center; padding: 50px 0; color: #5f6d7b; }
+.cart-empty .fa { font-size: 48px; color: #b3bcc9; }
+.checkout-heading { margin-top: 0; font-size: 20px; }
+.order-info li { padding: 4px 0; border-bottom: 1px dotted #e3e6ea; }
